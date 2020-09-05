@@ -93,7 +93,17 @@ In the following example, `Code.ID` column and `Country.CountryID` column from c
 
 @code {
 
-    public IEnumerable<Complex> LocalData { get; set; } = new Complex().GetData();
+    public I
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    erable<Complex> LocalData { get; set; } = new Complex().GetData();
 
     public class Code
     {
@@ -152,7 +162,8 @@ The following sample displays the first 6 contacts from **Customers** table of t
             public int? OrderID { get; set; }
             public string CustomerID { get; set; }
             public int? EmployeeID { get; set; }
-            public double? Freight { get; set; }
+            public double? Freight { get; 
+            set; }
             public string ShipCity { get; set; }
             public bool Verified { get; set; }
             public DateTime? OrderDate { get; set; }
@@ -315,7 +326,7 @@ You can bind enum data to DropDownList component. The following code helps you g
 
 @using Syncfusion.Blazor.DropDowns;
 
-<SfDropDownList TValue="string" TItem="Values" Placeholder="e.g. Australia" DataSource="@EnumValues" @bind-Value="@ddlVal">
+<SfDropDownList TValue="Values" TItem="string" Placeholder="e.g. Australia" DataSource="@EnumValues" @bind-Value="@ddlVal">
 </SfDropDownList>
 
 @code{
